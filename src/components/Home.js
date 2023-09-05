@@ -1,5 +1,7 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+
+import data from "../Data";
+import Props from "../Props";
 
 export default function Home(){
     return(
@@ -8,8 +10,42 @@ export default function Home(){
          <h1 id="products_heading">Latest Products</h1>
 
              <section id="products" className="container mt-5">
-  <div className="row">
-    <div className="col-sm-12 col-md-6 col-lg-3 my-3">
+   <div className="row">
+  {/*<div className='col-sm-12 col-md-6 col-lg-3 my-3' >
+                <div className="card p-3 rounded" >
+                  <img class="card-img-top mx-auto" src="./images/products/2.jpg" alt="Card image cap"/>
+                  
+                  <div className="card-body d-flex flex-column">
+                  <h5 className="card-title"><a href="">OPPO F21s Pro 5G (Dawnlight Gold, 8GB RAM, 128 Storage) with No Cost EMI/Additional Exchange Offers</a></h5>
+                  <p className="card-text">$7654.67/-</p>
+                  <a href="#" className="btn btn-secondary">buy now</a>
+             </div>
+           </div>
+
+                </div>  */}
+                {data.map((values)=>{
+                return(
+                    <>
+                    <Props 
+                    key={values.id}
+                    id={values.id}
+                    imgsrc={values.imgsrc}
+                    title={values.title}
+                    text= {values.text}
+                    
+                    btn={values.btn}
+                 />
+                 
+                    </>
+
+                )
+               
+                   
+                
+
+            })}
+                
+    {/* <div className="col-sm-12 col-md-6 col-lg-3 my-3">
       <div className="card p-3 rounded">
         <img
           className="card-img-top mx-auto"
@@ -208,7 +244,7 @@ export default function Home(){
 
         </div>
       </div>
-    </div>
+    </div> */}
 
 
   </div>

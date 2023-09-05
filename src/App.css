@@ -27,12 +27,12 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #d9e9ec;
   padding: 1rem 1rem;
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color: #a3a19ecc;
 }
 
 .input-group {
@@ -47,7 +47,7 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #a3a19ecc;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
@@ -58,7 +58,7 @@ nav {
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color: #a3a19ecc;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
@@ -252,10 +252,20 @@ footer {
   margin-top: 2rem;
   border-radius: 5rem;
 }
+.text-reset{
+  text-decoration: none;
+}
 
 #view_order_details {
   background-color: #fa9c23;
   border-color: #fa9c23;
+}
+#icons .fa{
+  padding: 10px;
+    
+}
+#product{
+  text-decoration: none;
 }
 
 #order_summary {

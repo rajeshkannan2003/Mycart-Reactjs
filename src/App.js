@@ -16,15 +16,18 @@ import Watch from './components/Watch';
 import Shoe from './components/Shoe';
 import BuyOppo from './components/BuyOppo';
 import Payment from './components/Payment';
+import Carousel from './Carousel';
 
 function App() {
   return (
     <Router>
       <div className="App">
       <Header/>
+      <Carousel />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Login' element={<Login/>} />
+        <Route path='/Carousel' element={<Carousel />} />
         <Route path='/Dell' element={< ProductDeatils />} />
         <Route path='Apple' element={< Apple />} />
         <Route path='/Headset' element={< Heatset />} />
